@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(257, 40%, 49%) url('./images/bg-mobile.svg') no-repeat top center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    max-width: 80rem;
+    margin: auto;
+}
+header{
+    margin: auto;
+    padding: 2rem;
+    height: 5rem;
+}
+header img{
+    max-width: 100%;
+}
+main{
+    margin: auto;
+    display: flex;
+    text-align: left;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+    flex-direction: row;
+    height: 70%;
+}
+article{
+
+    margin-left: 2rem;
+    min-width: auto;
+    min-height: auto;
+}
+h1{
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.clear{
+    clear: right;
+}
+
+p{
+    margin: 1rem 0;
+}
+
+.button {
+    font-family: Poppins, sans-serif;
+    background-color: white;
+    color:hsl(257, 40%, 49%);
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    box-shadow: 0 10px 10px -5px hsl(257, 40%, 20%);
+}
+.social_icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .social_icons a {
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50px;
+  }
+  .social_icons a:active,
+  .social_icons a:focus,
+  .social_icons a:hover {
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+  }
+
+  @media screen and (max-width:1090px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    } 
+    article{
+         flex-wrap: wrap;
+         /* position: absolute;
+         left: 0;
+         top:600px; */
+     } 
+     .social_icons{
+         display: flex;
+         justify-content: space-around;
+         /* position: absolute;
+         top: 530px;
+         left: 50px;
+         */
+
+     }
+     p>img{
+         max-width: 95%;
+     }
+    
+     
+  }
+  @media only screen and (min-width: 960px) {
+    html, body {
+      height: 100%;
+    }
+    body {
+      background-image: url('./images/bg-desktop.svg');
+      background-size: cover;
+      margin: 0 auto;
+    }
+    header img {
+      width: 180px;
+    }
+    main {
+      display: flex;
+      text-align: left;
+    }
+    main > * {
+      flex: 1;
+    }
+    main > article {
+      margin: 0 0 0 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    p {
+      line-height: 2;
+      margin: 1rem 0;
+      font-size: 1.25rem;
+    }
+    .social_icons {
+      margin: 0 2rem;
+      justify-content: flex-end;
+    }
+  }
+  @media only screen and (min-width: 1228px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
