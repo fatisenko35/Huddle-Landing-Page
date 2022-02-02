@@ -88,23 +88,29 @@ p{
     } 
     article{
          flex-wrap: wrap;
-         /* position: absolute;
-         left: 0;
-         top:600px; */
+       
      } 
      .social_icons{
          display: flex;
          justify-content: space-around;
-         /* position: absolute;
-         top: 530px;
-         left: 50px;
-         */
+      
 
      }
      p>img{
          max-width: 95%;
      }
-    
+    .button{
+      display: inline;
+      font-size: 16px;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      border-radius: 40px;
+
+    }
+    #button{
+      display: flex;
+      justify-content: flex-start;
+    }
      
   }
   @media only screen and (min-width: 960px) {
